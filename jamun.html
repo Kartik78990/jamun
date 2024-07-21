@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamun</title>
+    <link rel="stylesheet" href="jamun.css">
+</head>
+<body>
+<div class="main">
+<nav>
+        <div class="holiday">HOLIDAY</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+</nav>
+<div class="front">
+        <div id="pic">
+        <h1>FIND <span style="color: gold;">THE BEST</span> PLACE</h1>
+        <h4>FOR YOUR HOLIDAYS</h4>
+        <button><div>Search</div></button>
+        </div>
+        <ul>
+            <li><div style="border: 1px solid #000000;height: 400px; width: 300px;border-radius: 10px; background-color: #f9f9f9;">
+                <div style="display: flex; justify-content: space-between;">
+                  <button id="sign-in-btn">Sign In</button>
+                  <button id="log-in-btn">Log In</button>
+                </div>
+                <div id="sign-in-form" style="display: none;">
+                  <h5>Sign In</h5>
+                  <table style="position: relative;top: -150px;left: 15px;">
+                    <tr><th><label for="sign-in-username">Username:</label></th>
+                  <td><input type="email" id="sign-in-email" name="sign-in-email"></td><br><br></tr>
+                  <tr>
+                  <th><label for="sign-in-email">Email:</label></th>
+                  <td><input type="email" id="sign-in-email" name="sign-in-email"></td><br><br></tr>
+                  <tr><th><label for="sign-in-password">Password:</label></th>
+                  <td><input type="password" id="sign-in-password" name="sign-in-password"></td><br><br></tr>
+                </table>
+                  <button type="submit">Sign In</button>
+                </div>
+                <div id="log-in-form" style="display: none;">
+                  <h5>Log In</h5>
+                  <table style="position: relative;top: -100px;left: 15px;"><tr><th><label for="log-in-email">Email:</label></th>
+                  <td><input type="email" id="log-in-email" name="log-in-email"></td><br><br></tr>
+                  <tr><th><label for="log-in-password">Password:</label></th>
+                  <td><input type="password" id="log-in-password" name="log-in-password"></td><br><br></tr></table>
+                  <button type="submit">Log In</button>
+                </div>
+              
+                <script>
+                  const signInBtn = document.getElementById('sign-in-btn');
+                  const logInBtn = document.getElementById('log-in-btn');
+                  const signInForm = document.getElementById('sign-in-form');
+                  const logInForm = document.getElementById('log-in-form');
+              
+                  signInBtn.addEventListener('click', function() {
+                    signInForm.style.display = 'block';
+                    logInForm.style.display = 'none';
+                    signInBtn.style.backgroundColor = '#fff';
+                    logInBtn.style.backgroundColor = 'gold';
+                  });
+              
+                  logInBtn.addEventListener('click', function() {
+                    signInForm.style.display = 'none';
+                    logInForm.style.display = 'block';
+                    signInBtn.style.backgroundColor = 'gold';
+                    logInBtn.style.backgroundColor = '#fff';
+                  });
+                </script>
+              </div></li>
+            <li class="container" id="contain1"><div>France</div></li>
+            <li class="container" id="contain2"><div style="background-color: aqua;">Thailand</div></li>
+        </ul>  
+        <div class="iop2">
+            <div></div>
+            <h1 id="iop">BEST PLACES</h1>
+            <div></div>
+        </div>
+        <ul style="position: relative;top: 10px;justify-content: space-around;">
+            <li class="container" id="contain3"><div style="background-color: #ff5e00;">India</div></li>
+            <li class="container" id="contain4"><div>China</div></li>
+            <li class="container" id="contain5"><div style="background-color: rgb(247, 0, 255);">Japan</div></li>
+            <li class="container" id="contain4"><div>China</div></li>
+            
+        </ul>  
+        <div id="website">Thank you for visiting our website.Here you can book your flight to almost anywhere you want</div>   
+</div>
+<div class="slideshow-container">
+    <h2>Popular packages</h2>
+    <ul>
+        <li><div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/10/18/08/13/travel-1749508_640.jpg" alt="Travel Image" class="card-image">
+        <div class="card-content">
+            <h3>PROIN GRAVIDA NIBH VEL VELIT AUCTOR ALIQUET. AENEAN LOBORTIS.</h3>
+            <p>20 MARCH 2023</p>
+        </div>
+        <div class="card-footer">
+            <button class="like-button">❤️</button>
+            <button class="category-button">TRAVEL</button>
+        </div>
+    </div>
+</li>
+        <li>
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/1500563478/photo/traveler-asian-woman-relax-and-travel-on-thai-longtail-boat-in-ratchaprapha-dam-at-khao-sok.webp?b=1&s=170667a&w=0&k=20&c=PL6F9_KtlUx4E6pl9ryJxR3kLSv-l6aiHAi1DLw84vk=" alt="Travel Image" class="card-image">
+        <div class="card-content">
+            <h3>PROIN GRAVIDA NIBH VEL VELIT AUCTOR ALIQUET. AENEAN LOBORTIS.</h3>
+            <p>20 MARCH 2023</p>
+        </div>
+        <div class="card-footer">
+            <button class="like-button">❤️</button>
+            <button class="category-button">TRAVEL</button>
+        </div>
+    </div>
+</li>
+        <li>
+    <div class="card">
+        <img src="https://thumbs.dreamstime.com/b/ready-summer-vacation-travel-background-d-rendering-114574299.jpg" alt="Travel Image" class="card-image">
+        <div class="card-content">
+            <h3>PROIN GRAVIDA NIBH VEL VELIT AUCTOR ALIQUET. AENEAN LOBORTIS.</h3>
+            <p>20 MARCH 2023</p>
+        </div>
+        <div class="card-footer">
+            <button class="like-button">❤️</button>
+            <button class="category-button">TRAVEL</button>
+        </div>
+    </div>
+</li>
+        <li>
+    <div class="card">
+        <img src="https://img.freepik.com/free-photo/view-travel-items-assortment-still-life_23-2149617645.jpg" alt="Travel Image" class="card-image">
+        <div class="card-content">
+            <h3>PROIN GRAVIDA NIBH VEL VELIT AUCTOR ALIQUET. AENEAN LOBORTIS.</h3>
+            <p>20 MARCH 2023</p>
+        </div>
+        <div class="card-footer">
+            <button class="like-button">❤️</button>
+            <button class="category-button">TRAVEL</button>
+        </div>
+    </div>
+</li>
+    </ul>
+</div>
+<footer>
+        <div class="footer-content">
+          <p class="footer-text-left">
+            &copy; 2023 My Website. All rights reserved.
+          </p>
+          <div class="footer-content-right">
+            <a href="https://github.com/digitalocean"><img class="footer-img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="icon-style" alt="Github icon"></a>
+            <a href="https://www.twitter.com/DigitalOcean"><img class="footer-img" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/X_icon_2.svg" class="icon-style" alt="Twitter icon"></a>
+            <a href="mailto:youremail@example.com"><img class="footer-img"  src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" class="icon-style" alt="Email icon"></a>
+          </div>
+        </div>
+</footer>
+</div>
+</body>
+</html>
